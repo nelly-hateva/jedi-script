@@ -4,8 +4,7 @@
 
 (def repl-env (default-env))
 
-(defn run-file
-  [file]
+(defn run-file [file]
   (let [stmts (-> file slurp (parse prog))
         env (default-env)]
     (doseq [stm stmts]
