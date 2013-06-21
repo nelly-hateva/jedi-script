@@ -1,4 +1,7 @@
-(ns jedi-script.core)
+(ns jedi-script.core
+  (:use [jedi-script.repl :only (repl run-file)])
+  (gen-class :main true))
 
 (defn -main
-  [] (prn "Hello Nelly"))
+  ([] (repl))
+  ([filename] (run-file filename)))
