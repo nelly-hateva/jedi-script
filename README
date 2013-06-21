@@ -1,0 +1,14 @@
+# jedi-script
+
+JavaScript Interpreter
+
+## Usage
+
+lein run - start repl
+lein run examples/file.js - start example file
+
+## License
+
+Copyright (C) 2013 Nelly Hateva
+
+Distributed under the Eclipse Public License, the same as Clojure.
